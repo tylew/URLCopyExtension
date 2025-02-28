@@ -14,6 +14,8 @@ February 2025
 - ✅ **Safari Native Integration** - Works directly inside Safari as an extension.
 
 
+![Demo of Image](demo.png)
+
 ## 🛠 Installation
 
 ### 1️⃣ **Run in Xcode**
