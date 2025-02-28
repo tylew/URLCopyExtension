@@ -2,6 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>SFSafariContentScript</key>
+	<array>
+		<dict>
+			<key>RunAt</key>
+			<string>document_end</string>
+			<key>Matches</key>
+			<array>
+				<string>http://*/*</string>
+				<string>https://*/*</string>
+			</array>
+			<key>Script</key>
+			<string>content.js</string>
+		</dict>
+	</array>
+	<key>CFBundleIdentifier</key>
+	<string></string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionPointIdentifier</key>

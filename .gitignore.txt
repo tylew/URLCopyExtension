@@ -1,0 +1,47 @@
+# Xcode project files
+*.xcworkspace/
+*.xcuserstate
+*.xcuserdata/
+
+# Build products
+DerivedData/
+build/
+*.ipa
+*.app
+*.dSYM/
+
+# Swift Packages
+.swiftpm/
+Package.resolved
+
+# Logs & temp files
+*.log
+*.xcresult/
+*.swp
+*.swo
+*.DS_Store
+
+# Safari Extension Generated Files
+*.entitlements
+*.mobileprovision
+*.pbxproj
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcassets
+
+# Ignore Pods if using CocoaPods
+Pods/
+Podfile.lock
+
+# Ignore Carthage if using
+Carthage/
+
+# Ignore fastlane metadata
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# Ignore environment files
+.env
