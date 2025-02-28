@@ -36,20 +36,22 @@ open URLCopyExtension.xcodeproj
 1.	Open Safari → Settings (Cmd + ,).
 2.	Go to Extensions and enable URLCopyExtension.
 
-### 🔑 Usage
+❗️ If the extension doesn't show, you probably need to enable **Allow unsigned extensions** in **Safari Developer settings**
+
+## 🔑 Usage
 -	Press Cmd + Shift + C → The URL is copied to the clipboard.
 -	A toast message confirms the copy.
 
-### 🔧 Development & Debugging
+## 🔧 Development & Debugging
 -	Modify content.js to change how the extension interacts with Safari.
 -	Modify manifest.json or Info.plist to adjust permissions.
 -	Use console.log() to debug inside Safari Web Inspector.
 
-### 🤝 Contributing
+## 🤝 Contributing
 
 Pull requests are welcome.
 
 
-### 📜 License
+## 📜 License
 
 MIT License © 2025 Tyler Lewis
