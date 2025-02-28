@@ -1,0 +1,737 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99FA40492D7275570015F474 /* URLCopyExtension Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 99FA40482D7275570015F474 /* URLCopyExtension Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99FA40332D7275570015F474 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99FA400E2D7275560015F474 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99FA40152D7275560015F474;
+			remoteInfo = URLCopyExtension;
+		};
+		99FA403D2D7275570015F474 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99FA400E2D7275560015F474 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99FA40152D7275560015F474;
+			remoteInfo = URLCopyExtension;
+		};
+		99FA404A2D7275570015F474 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99FA400E2D7275560015F474 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99FA40472D7275570015F474;
+			remoteInfo = "URLCopyExtension Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		99FA40682D7275570015F474 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				99FA40492D7275570015F474 /* URLCopyExtension Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		99FA40162D7275560015F474 /* URLCopyExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URLCopyExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99FA40322D7275570015F474 /* URLCopyExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLCopyExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99FA403C2D7275570015F474 /* URLCopyExtensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLCopyExtensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99FA40482D7275570015F474 /* URLCopyExtension Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "URLCopyExtension Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		99FA40622D7275570015F474 /* Exceptions for "URLCopyExtension Extension" folder in "URLCopyExtension Extension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 99FA40472D7275570015F474 /* URLCopyExtension Extension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		99FA40182D7275560015F474 /* URLCopyExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = URLCopyExtension;
+			sourceTree = "<group>";
+		};
+		99FA40352D7275570015F474 /* URLCopyExtensionTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = URLCopyExtensionTests;
+			sourceTree = "<group>";
+		};
+		99FA403F2D7275570015F474 /* URLCopyExtensionUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = URLCopyExtensionUITests;
+			sourceTree = "<group>";
+		};
+		99FA404C2D7275570015F474 /* URLCopyExtension Extension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				99FA40622D7275570015F474 /* Exceptions for "URLCopyExtension Extension" folder in "URLCopyExtension Extension" target */,
+			);
+			explicitFolders = (
+				Resources/_locales,
+				Resources/images,
+			);
+			path = "URLCopyExtension Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99FA40132D7275560015F474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FA402F2D7275570015F474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FA40392D7275570015F474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FA40452D7275570015F474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99FA400D2D7275560015F474 = {
+			isa = PBXGroup;
+			children = (
+				99FA40182D7275560015F474 /* URLCopyExtension */,
+				99FA40352D7275570015F474 /* URLCopyExtensionTests */,
+				99FA403F2D7275570015F474 /* URLCopyExtensionUITests */,
+				99FA404C2D7275570015F474 /* URLCopyExtension Extension */,
+				99FA40172D7275560015F474 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99FA40172D7275560015F474 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99FA40162D7275560015F474 /* URLCopyExtension.app */,
+				99FA40322D7275570015F474 /* URLCopyExtensionTests.xctest */,
+				99FA403C2D7275570015F474 /* URLCopyExtensionUITests.xctest */,
+				99FA40482D7275570015F474 /* URLCopyExtension Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99FA40152D7275560015F474 /* URLCopyExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99FA40692D7275570015F474 /* Build configuration list for PBXNativeTarget "URLCopyExtension" */;
+			buildPhases = (
+				99FA40122D7275560015F474 /* Sources */,
+				99FA40132D7275560015F474 /* Frameworks */,
+				99FA40142D7275560015F474 /* Resources */,
+				99FA40682D7275570015F474 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99FA404B2D7275570015F474 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				99FA40182D7275560015F474 /* URLCopyExtension */,
+			);
+			name = URLCopyExtension;
+			packageProductDependencies = (
+			);
+			productName = URLCopyExtension;
+			productReference = 99FA40162D7275560015F474 /* URLCopyExtension.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99FA40312D7275570015F474 /* URLCopyExtensionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99FA406C2D7275570015F474 /* Build configuration list for PBXNativeTarget "URLCopyExtensionTests" */;
+			buildPhases = (
+				99FA402E2D7275570015F474 /* Sources */,
+				99FA402F2D7275570015F474 /* Frameworks */,
+				99FA40302D7275570015F474 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99FA40342D7275570015F474 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				99FA40352D7275570015F474 /* URLCopyExtensionTests */,
+			);
+			name = URLCopyExtensionTests;
+			packageProductDependencies = (
+			);
+			productName = URLCopyExtensionTests;
+			productReference = 99FA40322D7275570015F474 /* URLCopyExtensionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		99FA403B2D7275570015F474 /* URLCopyExtensionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99FA406F2D7275570015F474 /* Build configuration list for PBXNativeTarget "URLCopyExtensionUITests" */;
+			buildPhases = (
+				99FA40382D7275570015F474 /* Sources */,
+				99FA40392D7275570015F474 /* Frameworks */,
+				99FA403A2D7275570015F474 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99FA403E2D7275570015F474 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				99FA403F2D7275570015F474 /* URLCopyExtensionUITests */,
+			);
+			name = URLCopyExtensionUITests;
+			packageProductDependencies = (
+			);
+			productName = URLCopyExtensionUITests;
+			productReference = 99FA403C2D7275570015F474 /* URLCopyExtensionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		99FA40472D7275570015F474 /* URLCopyExtension Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99FA40632D7275570015F474 /* Build configuration list for PBXNativeTarget "URLCopyExtension Extension" */;
+			buildPhases = (
+				99FA40442D7275570015F474 /* Sources */,
+				99FA40452D7275570015F474 /* Frameworks */,
+				99FA40462D7275570015F474 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				99FA404C2D7275570015F474 /* URLCopyExtension Extension */,
+			);
+			name = "URLCopyExtension Extension";
+			packageProductDependencies = (
+			);
+			productName = "URLCopyExtension Extension";
+			productReference = 99FA40482D7275570015F474 /* URLCopyExtension Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99FA400E2D7275560015F474 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					99FA40152D7275560015F474 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					99FA40312D7275570015F474 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 99FA40152D7275560015F474;
+					};
+					99FA403B2D7275570015F474 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 99FA40152D7275560015F474;
+					};
+					99FA40472D7275570015F474 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 99FA40112D7275560015F474 /* Build configuration list for PBXProject "URLCopyExtension" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99FA400D2D7275560015F474;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 99FA40172D7275560015F474 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99FA40152D7275560015F474 /* URLCopyExtension */,
+				99FA40312D7275570015F474 /* URLCopyExtensionTests */,
+				99FA403B2D7275570015F474 /* URLCopyExtensionUITests */,
+				99FA40472D7275570015F474 /* URLCopyExtension Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99FA40142D7275560015F474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FA40302D7275570015F474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FA403A2D7275570015F474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FA40462D7275570015F474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99FA40122D7275560015F474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FA402E2D7275570015F474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FA40382D7275570015F474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FA40442D7275570015F474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99FA40342D7275570015F474 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99FA40152D7275560015F474 /* URLCopyExtension */;
+			targetProxy = 99FA40332D7275570015F474 /* PBXContainerItemProxy */;
+		};
+		99FA403E2D7275570015F474 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99FA40152D7275560015F474 /* URLCopyExtension */;
+			targetProxy = 99FA403D2D7275570015F474 /* PBXContainerItemProxy */;
+		};
+		99FA404B2D7275570015F474 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99FA40472D7275570015F474 /* URLCopyExtension Extension */;
+			targetProxy = 99FA404A2D7275570015F474 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		99FA40642D7275570015F474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "URLCopyExtension Extension/URLCopyExtension_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "URLCopyExtension Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "URLCopyExtension Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tylew.URLCopyExtension.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		99FA40652D7275570015F474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "URLCopyExtension Extension/URLCopyExtension_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "URLCopyExtension Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "URLCopyExtension Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tylew.URLCopyExtension.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		99FA40662D7275570015F474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		99FA40672D7275570015F474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		99FA406A2D7275570015F474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = URLCopyExtension/URLCopyExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = URLCopyExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tylew.URLCopyExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		99FA406B2D7275570015F474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = URLCopyExtension/URLCopyExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = URLCopyExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tylew.URLCopyExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		99FA406D2D7275570015F474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tylew.URLCopyExtensionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/URLCopyExtension.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/URLCopyExtension";
+			};
+			name = Debug;
+		};
+		99FA406E2D7275570015F474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tylew.URLCopyExtensionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/URLCopyExtension.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/URLCopyExtension";
+			};
+			name = Release;
+		};
+		99FA40702D7275570015F474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tylew.URLCopyExtensionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = URLCopyExtension;
+			};
+			name = Debug;
+		};
+		99FA40712D7275570015F474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tylew.URLCopyExtensionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = URLCopyExtension;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99FA40112D7275560015F474 /* Build configuration list for PBXProject "URLCopyExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99FA40662D7275570015F474 /* Debug */,
+				99FA40672D7275570015F474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99FA40632D7275570015F474 /* Build configuration list for PBXNativeTarget "URLCopyExtension Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99FA40642D7275570015F474 /* Debug */,
+				99FA40652D7275570015F474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99FA40692D7275570015F474 /* Build configuration list for PBXNativeTarget "URLCopyExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99FA406A2D7275570015F474 /* Debug */,
+				99FA406B2D7275570015F474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99FA406C2D7275570015F474 /* Build configuration list for PBXNativeTarget "URLCopyExtensionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99FA406D2D7275570015F474 /* Debug */,
+				99FA406E2D7275570015F474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99FA406F2D7275570015F474 /* Build configuration list for PBXNativeTarget "URLCopyExtensionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99FA40702D7275570015F474 /* Debug */,
+				99FA40712D7275570015F474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99FA400E2D7275560015F474 /* Project object */;
+}
