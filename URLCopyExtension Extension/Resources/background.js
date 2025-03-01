@@ -1,16 +1,9 @@
-//
-//  background.js
-//  URLCopyExtension
-//
-//  Created by fsl-dev on 2/28/25.
-//
-
-chrome.commands.onCommand.addListener((command) => {
+browser.commands.onCommand.addListener((command) => {
+    console.log("✅ Command received: Copy URL")
     if (command === "copy-url") {
         console.log("✅ Command received: Copy URL");
 
-        // Get the active tab
-        chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+        browser.tabs.query({ active: true, currentWindow: true }).then((tabs) => {
             if (tabs.length === 0) {
                 console.error("❌ No active tab found");
                 return;
@@ -18,15 +11,9 @@ chrome.commands.onCommand.addListener((command) => {
 
             const tabId = tabs[0].id;
 
-            // Inject `content.js` if needed before sending a message
-            chrome.scripting.executeScript({
-                target: { tabId: tabId },
-                files: ["content.js"]
-            }).then(() => {
-                console.log("✅ Content script injected, sending message...");
-                chrome.tabs.sendMessage(tabId, { action: "copyURL" });
-            }).catch((error) => {
-                console.error("❌ Error injecting content script:", error);
+            console.log("✅ Sending message to content script...");
+            browser.tabs.sendMessage(tabId, { action: "copyURL" }).catch((error) => {
+                console.error("❌ Error sending message to content script:", error);
             });
         });
     }
