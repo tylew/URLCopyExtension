@@ -1,29 +1,33 @@
 console.log("✅ Content script loaded");
 
-// Listen for messages from background.js
-chrome.runtime.onMessage.addListener((message) => {
-    console.log("📩 Message received in content script:", message);
-    if (message.action === "copyURL") {
-        console.log("🔹 Copying URL...");
+// ✅ Listen for Cmd + Shift + C (real user event)
+document.addEventListener("keydown", (event) => {
+    if (event.metaKey && event.shiftKey && event.code === "KeyC") {
+        event.preventDefault();
         copyCurrentURL();
     }
 });
 
-function copyCurrentURL() {
+async function copyCurrentURL() {
     const url = window.location.href;
 
     try {
-        document.execCommand("copy");
-        console.log("✅ URL copied:", url);
-        showToast("✅ URL copied:" + url);
+        // ✅ Use ClipboardItem to copy text (works in Safari)
+        const clipboardItem = new ClipboardItem({
+            "text/plain": new Promise((resolve) => {
+                resolve(new Blob([url], { type: "text/plain" }));
+            })
+        });
+
+        await navigator.clipboard.write([clipboardItem]);
+
+        console.log("✅ URL copied using ClipboardItem:", url);
+        showToast("✅ URL copied: " + url);
     } catch (err) {
-        console.error("❌ Clipboard copy method failed:", err);
-        showToast("❌ Clipboard copy blocked! Check Javascript console for details.");
+        console.error("❌ Clipboard API failed:", err);
+        alert("❌ Clipboard API failed")
     }
-
-    document.body.removeChild(textArea);
 }
-
 
 // Function to show a toast notification using Shadow DOM
 function showToast(message) {
@@ -52,12 +56,12 @@ function showToast(message) {
     toast.style.right = "20px";
     toast.style.backgroundColor = window.matchMedia("(prefers-color-scheme: dark)").matches ? "#333" : "#f0f0f0";
     toast.style.color = window.matchMedia("(prefers-color-scheme: dark)").matches ? "#fff" : "#000";
-    toast.style.padding = "10px 18px";
+    toast.style.padding = "5px 18px";
     toast.style.borderRadius = "8px";
     toast.style.fontFamily = "Arial, sans-serif";
-    toast.style.fontSize = "14px";
+    toast.style.fontSize = "13px";
     toast.style.boxShadow = "0px 4px 10px rgba(0, 0, 0, 0.2)";
-    toast.style.opacity = "1";
+    toast.style.opacity = "0.9";
     toast.style.transition = "opacity 0.2s ease-out";
     toast.style.pointerEvents = "none"; // Ensure it doesn't interfere with clicks
     toast.style.border = "3px solid transparent";
