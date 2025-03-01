@@ -6,7 +6,7 @@ URLCopyExtension is a lightweight Safari Web Extension that allows users to quic
 
 
 ## 🚀 Key Features
-- ✅ Overrides Safari’s default Cmd + Shift + C behavior (when dev tools enabled).
+- ✅ Overrides Safari’s default Cmd + Shift + C behavior (opens console when dev tools enabled).
 - ✅ Copies the URL to the clipboard instantly.
 - ✅ Shows a toast notification for confirmation.
 - ✅ Injects only when needed (at command time), ensuring minimal impact on performance or security concerns.
