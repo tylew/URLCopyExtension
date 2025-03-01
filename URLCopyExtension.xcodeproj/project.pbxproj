@@ -71,16 +71,6 @@
 			path = URLCopyExtension;
 			sourceTree = "<group>";
 		};
-		99FA40352D7275570015F474 /* URLCopyExtensionTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = URLCopyExtensionTests;
-			sourceTree = "<group>";
-		};
-		99FA403F2D7275570015F474 /* URLCopyExtensionUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = URLCopyExtensionUITests;
-			sourceTree = "<group>";
-		};
 		99FA404C2D7275570015F474 /* URLCopyExtension Extension */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -131,8 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				99FA40182D7275560015F474 /* URLCopyExtension */,
-				99FA40352D7275570015F474 /* URLCopyExtensionTests */,
-				99FA403F2D7275570015F474 /* URLCopyExtensionUITests */,
 				99FA404C2D7275570015F474 /* URLCopyExtension Extension */,
 				99FA40172D7275560015F474 /* Products */,
 			);
@@ -189,9 +177,6 @@
 			dependencies = (
 				99FA40342D7275570015F474 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				99FA40352D7275570015F474 /* URLCopyExtensionTests */,
-			);
 			name = URLCopyExtensionTests;
 			packageProductDependencies = (
 			);
@@ -211,9 +196,6 @@
 			);
 			dependencies = (
 				99FA403E2D7275570015F474 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				99FA403F2D7275570015F474 /* URLCopyExtensionUITests */,
 			);
 			name = URLCopyExtensionUITests;
 			packageProductDependencies = (
