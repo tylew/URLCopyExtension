@@ -33,6 +33,8 @@ open URLCopyExtension.xcodeproj
 1.	Open Safari → Settings (Cmd + ,).
 2.	Go to Extensions and enable URLCopyExtension.
 
+![Demo of Image](demo2.png)
+
 ### ❗ If the extension doesn’t appear:
 - Enable “Allow unsigned extensions” in Safari Developer Settings.
 - Restart Safari.
