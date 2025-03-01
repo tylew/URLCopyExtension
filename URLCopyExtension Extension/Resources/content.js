@@ -1,10 +1,14 @@
-console.log("✅ Content script loaded");
-
-// ✅ Listen for Cmd + Shift + C (real user event)
-document.addEventListener("keydown", (event) => {
+document.addEventListener("keydown", async (event) => {
     if (event.metaKey && event.shiftKey && event.code === "KeyC") {
         event.preventDefault();
-        copyCurrentURL();
+
+        if (!window.__copyInProgress) {
+            window.__copyInProgress = true;
+            await copyCurrentURL();
+            window.__copyInProgress = false;
+        } else {
+            console.log("🚫 Copy already in progress, skipping.");
+        }
     }
 });
 
@@ -12,21 +16,49 @@ async function copyCurrentURL() {
     const url = window.location.href;
 
     try {
-        // ✅ Use ClipboardItem to copy text (works in Safari)
-        const clipboardItem = new ClipboardItem({
-            "text/plain": new Promise((resolve) => {
-                resolve(new Blob([url], { type: "text/plain" }));
-            })
-        });
+        console.log("🔹 Checking clipboard permissions...");
 
-        await navigator.clipboard.write([clipboardItem]);
+        // ✅ Ensure clipboard API is available
+        if (!navigator.clipboard || !navigator.clipboard.writeText) {
+            throw new Error("Clipboard API not supported in this browser.");
+        }
 
-        console.log("✅ URL copied using ClipboardItem:", url);
+        console.log("🔹 Attempting to copy...");
+
+        // ✅ Use writeText() instead of ClipboardItem (which Safari does not support well)
+        await navigator.clipboard.writeText(url);
+
+        console.log("✅ URL copied successfully:", url);
         showToast("✅ URL copied: " + url);
     } catch (err) {
         console.error("❌ Clipboard API failed:", err);
-        alert("❌ Clipboard API failed")
+        fallbackCopy(url);
     }
+}
+
+function fallbackCopy(text) {
+    console.warn("⚠️ Attempting fallback clipboard copy method...");
+
+    const textArea = document.createElement("textarea");
+    textArea.value = text;
+    textArea.style.position = "fixed";
+    textArea.style.opacity = "0";
+    document.body.appendChild(textArea);
+    textArea.select();
+
+    try {
+        if (document.execCommand("copy")) {
+            console.log("✅ URL copied using fallback method:", text);
+            showToast("✅ URL copied: " + text);
+        } else {
+            throw new Error("ExecCommand copy failed");
+        }
+    } catch (err) {
+        console.error("❌ Both clipboard methods failed:", err);
+        alert("❌ Clipboard copy blocked! Try manually selecting and copying.");
+    }
+
+    document.body.removeChild(textArea);
 }
 
 // Function to show a toast notification using Shadow DOM
