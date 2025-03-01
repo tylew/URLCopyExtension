@@ -6,11 +6,11 @@ URLCopyExtension is a lightweight Safari Web Extension that allows users to quic
 
 
 ## 🚀 Key Features
-- ✅ Overrides Safari’s default Cmd + Shift + C behavior (when dev tools enabled)
-- ✅ Copies the URL to the clipboard instantly
-- ✅ Shows a toast notification for confirmation
-- ✅ Injects only when needed (at command time), ensuring minimal impact on performance
-- ✅ Leverages a shadow DOM to improve performance and avoid unintended overwrites 
+- ✅ Overrides Safari’s default Cmd + Shift + C behavior (when dev tools enabled).
+- ✅ Copies the URL to the clipboard instantly.
+- ✅ Shows a toast notification for confirmation.
+- ✅ Injects only when needed (at command time), ensuring minimal impact on performance or security concerns.
+- ✅ Leverages a shadow DOM to improve performance and avoid unintended overwrites.
 
 
 ![Demo of Image](demo.png)
@@ -26,16 +26,16 @@ open URLCopyExtension.xcodeproj
 ```
 
 ### 2️⃣ Run the Extension
-	1.	Select the Safari Web Extension Target in Xcode.
-	2.	Click Run (Cmd + R).
+1.	Select the Safari Web Extension Target in Xcode.
+2.	Click Run (Cmd + R).
 
 ### 3️⃣ Enable in Safari
-	1.	Open Safari → Settings (Cmd + ,).
-	2.	Go to Extensions and enable URLCopyExtension.
+1.	Open Safari → Settings (Cmd + ,).
+2.	Go to Extensions and enable URLCopyExtension.
 
 ### ❗ If the extension doesn’t appear:
-	•	Enable “Allow unsigned extensions” in Safari Developer Settings.
-	•	Restart Safari.
+- Enable “Allow unsigned extensions” in Safari Developer Settings.
+- Restart Safari.
 
 ## 🔑 Usage
 
